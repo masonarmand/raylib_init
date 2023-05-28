@@ -3,11 +3,16 @@ Generates a template raylib project.
 Heres what it does
 - Creates directories: `src`, `res`, `include`, `deps`
 - Clones the raylib repository
-- Moves the raylib source folder into a `deps` folder.
-- Creates a makefile that will properly handle compiling raylib and your project
+- Moves the raylib source folder and other files required for building into a `deps` folder.
+- Creates a CMakeLists that will properly handle compiling raylib and your project
 - Creates a simple main.c file that will display a hello world raylib program
+- creates three scripts:
+  - build.sh - runs cmake to compile the project
+  - build.bat - same thing as above but for windows
+  - debug.sh - runs build.sh and then executes gdb with gdbinit script
+  - gdbinit - makes gdb auto start and auto close
 
-The makefile is also configured in a way that automatically launches your game in gdb, this is useful for debugging crashes.
+This program assumes you have cmake, git, and gdb installed.
 
 ## Installation
 ```

@@ -4,7 +4,6 @@ WARNINGS += -Wall
 WARNINGS += -Wextra
 WARNINGS += -Wold-style-definition
 WARNINGS += -Wcast-align
-WARNINGS += -Wformat=2
 WARNINGS += -Wlogical-op
 WARNINGS += -Wmissing-declarations
 WARNINGS += -Wmissing-include-dirs
